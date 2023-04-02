@@ -1,12 +1,10 @@
 import React from "react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Paragraph from "./Reusables/Paragraph";
+import Paragraph from "./Paragraph";
 
 const Accordion = ({ i, expanded, setExpanded }) => {
   const isOpen = i === expanded;
-  console.log("valor isOpen " + isOpen);
-  console.log("valor expanded " + expanded);
 
   // By using `AnimatePresence` to mount and unmount the contents, we can animate
   // them in and out while also only rendering the contents of open accordions
@@ -45,7 +43,7 @@ export const Answers = () => {
   const [expanded, setExpanded] = useState(false);
 
   return accordionIds.map((i) => (
-    <Accordion i={i} expanded={expanded} setExpanded={setExpanded} />
+    <Accordion key={i} i={i} expanded={expanded} setExpanded={setExpanded} />
   ));
 };
 

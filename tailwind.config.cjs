@@ -5,8 +5,8 @@ module.exports = {
     extend: {
       borderStyle: ["hover"],
       backgroundImage: {
-        profe:
-          "url('https://static.filadd.com/academia-filadd/af_subject_handler/sh%23202/thumbnails/sh%23202.landing_card.thumb.iXh7B7M.jpg')",
+        "gradient-radial":
+          "linear-gradient(62.1% 87.2% at 50% 100%,#2c3be8 0%,#091370 100%)",
       },
       animation: {
         text: "text 5s ease infinite",

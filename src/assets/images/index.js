@@ -1,0 +1,11 @@
+export { default as Estudiante } from "./estudiante.png";
+export { default as Discord } from "./discord.svg";
+export { default as Drive } from "./drive.svg";
+export { default as Gradient } from "./gradient.png";
+export { default as Logo } from "./logo.png";
+export { default as Micro } from "./micro.jpg";
+export { default as Profe } from "./profe1.png";
+export { default as Trello } from "./trello.svg";
+export { default as User1 } from "./user1.jpg";
+export { default as User2 } from "./user2.jpg";
+export { default as WeOfferYou } from "./weOffer.jpg";

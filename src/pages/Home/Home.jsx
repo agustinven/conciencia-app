@@ -1,23 +1,24 @@
 import React from "react";
-import Cards from "../../components/Cards";
-import Community from "../../components/Community";
-import Hero from "../../components/Hero";
-import NavBar from "../../components/NavBar";
-import WeOffer from "../../components/WeOffer";
-import WhyChoose from "../../components/WhyChoose";
-import Footer from "../../components/Footer";
-import Answers from "../../components/Answers";
+import CoursePrincipal from "../../components/CoursesInfo/CoursesPrincipal";
+import { Hero, PromotionBar, WeOffer } from "./components";
+import { Community, NavBar, Footer } from "../../components";
+import WhyChoose from "../../components/Infocards/WhyChoose";
 
 const Home = () => {
   return (
     <>
+      <PromotionBar
+        bgColor="bg-gradient-to-r from-[#6709DA] to-[#0F97FF]"
+        span="#INSCRIBITE"
+        p=" A NUESTRO CURSO DE MICROSCOPIA!!"
+      />
       <NavBar />
       <Hero />
       <WeOffer />
       <WhyChoose />
-      <Cards />
+      <CoursePrincipal />
       <Community />
-      <Answers />
+      {/* <Answers /> */}
       <Footer />
     </>
   );
