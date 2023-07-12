@@ -1,39 +1,35 @@
 import React from "react";
 import { FaCheck } from "react-icons/fa";
-import { motion } from "framer-motion";
-import Discount from "./DiscountCourse";
+import { Link } from "react-router-dom";
 
 const CourseCards = ({
+  id,
   discount,
   title,
   features,
+  discountPrice,
   price,
   modality,
-  color,
-  gradient,
-  clipText,
+  discountBarColor,
 }) => {
   return (
-    <div className="bg-white border-[2px] rounded-[20px] w-full relative z-10 flex flex-col my-4 text-black font-bold">
+    <div className="bg-[#2B2C32] rounded-[20px] w-full relative z-10 flex flex-col my-4 text-white font-bold font-['Source_Sans_3']">
       {/*Discount*/}
       <div
-        className="w-[200px] rounded-r-xl mt-4 py-[4px] px-4 text-white font-bold"
-        style={{ background: color, background: gradient }}
+        className="w-full text-center rounded-t-xl py-[4px] px-4 text-white font-bold "
+        style={{ backgroundColor: discountBarColor }}
       >
         {discount}
       </div>
       <div className="m-4">
         {/*Title*/}
-        <h1
-          className="h-16 bg-gradient-to-r bg-clip-text text-transparent font-bold text-6xl"
-          style={{ background: gradient }}
-        >
+        <h1 className="h-16 font-bold font-['Inter'] text-5xl overflow-hidden	">
           {title}
         </h1>
-        <p className="text-[#7B7B7B] py-2">/ por seis meses</p>
-        <div className="w-[350px] border border-[#7B7B7B] mx-auto"></div>
+        <p className="py-2">/ por seis meses</p>
+        <div className="border border-[#7B7B7B] "></div>
         {/*Features section*/}
-        <div className="py-8">
+        <div className="py-10">
           <ul className="mb-10 flex flex-col gap-y-2">
             {features.map((feature) => (
               <li key={feature} className="flex items-center">
@@ -42,21 +38,22 @@ const CourseCards = ({
               </li>
             ))}
           </ul>
+
+          {/* Discount Price */}
+          <div>
+            <p className="text-[#7B7B7B]">
+              Standard Plan{" "}
+              <span className="line-through">{discountPrice}</span>
+            </p>
+          </div>
           {/*Price*/}
-          <p className="pt-6 bg-gradient-to-r bg-clip-text text-transparent from-[#0088FF] to-[#00CCFF] font-bold text-5xl">
-            {price}
-          </p>
-          <p className="py-1 mt-8 bg-[#F2EFEF] rounded-full w-[200px] text-center text-[#7B7B7B]">
-            {modality}
-          </p>
+          <p className="pt-2 font-bold text-5xl">{price}</p>
+          <p className="py-1 mt-8 w-[200px] text-center">{modality}</p>
         </div>
         {/*Button*/}
-        <motion.button
-          className="bg-gradient-to-br from-[#0088FF] to-[#00CCFF] w-full text-white text-xl rounded-xl py-2"
-          style={{ background: color, background: gradient }}
-        >
-          Ver más
-        </motion.button>
+        <button className="bg-[#393B43] w-full text-[#14D990] text-xl rounded-2xl py-3">
+          <Link to={`/courses/${id}`}>Ver Más</Link>
+        </button>
       </div>
     </div>
   );

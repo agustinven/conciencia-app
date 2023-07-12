@@ -3,25 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      borderStyle: ["hover"],
       backgroundImage: {
-        "gradient-radial":
-          "linear-gradient(62.1% 87.2% at 50% 100%,#2c3be8 0%,#091370 100%)",
-      },
-      animation: {
-        text: "text 5s ease infinite",
-      },
-      keyframes: {
-        text: {
-          "0%, 100%": {
-            "background-size": "200% 200%",
-            "background-position": "left center",
-          },
-          "50%": {
-            "background-size": "200% 200%",
-            "background-position": "right center",
-          },
-        },
+        "gradient-community":
+          "radial-gradient(51.51% 51.52% at 50% 46.86%, #453E97 1.56%, rgba(0, 0, 0, 0.72) 100%)",
       },
     },
   },

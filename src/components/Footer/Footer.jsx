@@ -9,13 +9,10 @@ import {
 
 const Footer = () => {
   return (
-    <div className="bg-black">
+    <div className="">
       <div className="max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8">
         <div>
-          <h1
-            className="w-full text-3xl font-bold bg-gradient-to-r bg-clip-text  text-transparent 
-            from-fuchsia-500 via-violet-500 to-fuchsia-500 animate-text "
-          >
+          <h1 className="w-full text-3xl font-bold text-[#BE09FF]">
             CONCIENCIA ACADEMY
           </h1>
           <p className="py-4 text-white">

@@ -1,10 +1,10 @@
 import React from "react";
-// import Logo from "../../assets";
+import { motion } from "framer-motion";
 
 const NavBar = () => {
   return (
     <div className="bg-black">
-      <div className="text-white font-bold text-md flex justify-between items-center max-w-[1400px] mx-auto h-20">
+      <div className="text-white font-['Source Sans 3'] font-bold text-md flex justify-between items-center max-w-[1400px] mx-auto h-14">
         {/* <img className="w-12" src={Logo} /> */}
         <ul className="flex">
           <li className="">
@@ -40,11 +40,11 @@ const NavBar = () => {
             </a>
           </li>
         </ul>
-        <div>
+        {/* <div>
           <button className="w-[150px] h-10 bg-gradient-to-r from-[#0F97FF] to-[#9900FF] rounded-xl">
             Inicia Sesion
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -6,18 +6,15 @@ import { ImgReusable } from "../Image";
 const CardsGridsInfo = () => {
   return (
     // Flex Container
-    <div className="relative flex flex-col items-center w-[100%] mt-[100px] ">
+    <div className="bg-red-400 relative flex flex-col items-center w-[100%]">
       {/* Grid Container */}
       <div className="grid flex-none justify-center gap-[20px] max-w-[1200px] w-[100%] grid-cols-8	grid-rows-1">
         {/* First Container */}
-        <div className="flex flex-col h-[500px] w-[100%] col-[auto_/_span_5] rounded-[20px] bg-gradient-to-br from-[#F20575] to-[#6F00F8]">
+        <div className="flex flex-col h-[500px] w-[100%] col-[auto_/_span_5] rounded-[20px] bg-[#5A31F7]">
           <CardGridText
             title="Profesores expertos"
             content="Aprendé interactuando con líderes de gran trayectoria en las empresas
             de tecnología más innovadoras."
-            textColorOne="text-[#fff]"
-            textColorTwo="text-[#fff]"
-            textOpacity="opacity-70"
           />
           <ImgReusable
             img={Profe}
@@ -27,12 +24,10 @@ const CardsGridsInfo = () => {
           />
         </div>
         {/* Second Container */}
-        <div className="flex flex-col h-[500px] w-[100%] bg-red-400 col-[auto_/_span_3] rounded-[20px] bg-gradient-to-br from-[#07DEFF] to-[#0088FF]">
+        <div className="flex flex-col h-[500px] w-[100%] col-[auto_/_span_3] rounded-[20px] bg-[#2D8BF0]">
           <CardGridText
             title="Tasa de aprobados"
             content="Contamos con una tasa de aprobacion  del 90%."
-            textColorOne="text-[#fff]"
-            textColorTwo="text-[#555555]"
           />
           <ImgReusable
             img={Profe}
@@ -42,12 +37,10 @@ const CardsGridsInfo = () => {
           />
         </div>
         {/* Third Container */}
-        <div className="flex flex-col h-[500px] w-[100%] bg-red-400 col-[auto_/_span_3] rounded-[20px] bg-gradient-to-br from-[#0FBDDB] to-[#4AF3C3]">
+        <div className="flex flex-col h-[500px] w-[100%] col-[auto_/_span_3] rounded-[20px] bg-[#BF30F2]">
           <CardGridText
             title="Cursos especializados"
             content="Sumate a nuestros master cursos."
-            textColorOne="text-[#fff]"
-            textColorTwo="text-[#555555]"
           />
           <ImgReusable
             img={Micro}
@@ -57,13 +50,10 @@ const CardsGridsInfo = () => {
           />
         </div>
         {/* Fourth Container */}
-        <div className="flex flex-col justify-between h-[500px] w-[100%] col-[auto_/_span_5] rounded-[20px] bg-gradient-to-br from-[#0099FF] to-[#FF00FF]">
+        <div className="flex flex-col justify-between h-[500px] w-[100%] col-[auto_/_span_5] rounded-[20px] bg-[#EE3E5F]">
           <CardGridText
             title="La mejor educacion online a tu alcance"
             content="Inscribite a clases prácticas con mentorías personalizadas dictadas por quienes más saben."
-            textColorOne="text-[#fff]"
-            textColorTwo="text-[#fff]"
-            textOpacity="opacity-70"
           />
           <div className="w-full flex flex-row justify-between">
             <div>

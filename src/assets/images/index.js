@@ -9,3 +9,8 @@ export { default as Trello } from "./trello.svg";
 export { default as User1 } from "./user1.jpg";
 export { default as User2 } from "./user2.jpg";
 export { default as WeOfferYou } from "./weOffer.jpg";
+export { default as CommunityOne } from "./community_one.png";
+export { default as CommunityTwo } from "./community_two.png";
+export { default as CommunityThree } from "./community_three.png";
+export { default as RectangleOne } from "./rectangle_1.svg";
+export { default as RectangleTwo } from "./rectangle_2.svg";

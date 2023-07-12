@@ -1,85 +1,46 @@
 import React from "react";
-
-import { motion } from "framer-motion";
+import CardCommunity from "./CardCommunity";
+import { CommunityOne } from "../../assets";
+import { CommunityTwo } from "../../assets";
+import { CommunityThree } from "../../assets";
+import TitlePresentation from "../Titles/TitlePresentation";
 
 const Community = () => {
   return (
-    <div className="w-full  ">
-      <div className="max-w-[1240px] mx-auto text-center pb-16 ">
-        <h1
-          className="text-2xl font-bold md:text-6xl sm:text-3xl pt-12 bg-gradient-to-r bg-clip-text  text-transparent 
-            from-fuchsia-500 via-violet-500 to-fuchsia-500 animate-text"
-        >
-          De la comunidad de conciencia
-        </h1>
-        <h2 className="text-2xl font-bold md:text-3xl sm:text-3xl pt-4 pb-8 text-[#ffff]">
-          Cientos de estudiantes ya aprenden en conciencia
-        </h2>
-        <div className="max-w-[1240px] mx-auto flex items gap-8 text-white">
-          {/* First Card */}
-          <motion.div className="w-full p-8 shadow-xl my-4 rounded-lg bg-[#2B2C32]">
-            <div>
-              <img className="rounded-full w-[110px] h-[110px] mx-auto" />
-              <p className="pt-4">Fabian Mendez</p>
-              <p className="pb-4">Bioquimico UNC</p>
-              <div className="border border-[#3F8CFF] w-[100px] mx-auto"></div>
-              <p className="pt-6">
-                'No solo mi currículum luce impresionante, repleto de nombres y
-                logotipos de instituciones de nivel mundial, sino que estos
-                certificados también me acercan a mis objetivos profesionales al
-                validar las habilidades que he aprendido'.
-              </p>
-            </div>
-          </motion.div>
+    <div className="w-full mt-36">
+      <div className="max-w-[1400px] mx-auto text-center py-36 relative">
+        <TitlePresentation
+          h1={"De la comunidad de conciencia"}
+          p={"Cientos de estudiantes ya aprenden en conciencia"}
+          bgColor="text-[#7F43FF]"
+        />
+        <div className="relative h-auto mx-auto py-24 flex items-center gap-8 text-white ">
+          <CardCommunity
+            opinion={
+              "Las clases superaron mis expectativas ampliamente, la buena onda y las explicaciones fueron nada que ver a lo que yo pensaba..."
+            }
+            img={CommunityOne}
+            name={"Agustin Avendaño"}
+            career={"Software Developer"}
+          />
 
-          {/* Second Card */}
-          <div className="w-full p-8 shadow-xl my-4 rounded-lg bg-[#222429]">
-            <img className="rounded-full w-[110px] h-[110px] mx-auto" />
-            <p className="pt-4">Florencia Vega</p>
-            <p className="pb-2">Farmaceutica UNC</p>
-            <div className="border border-[#3F8CFF] w-[100px] mx-auto"></div>
-            <p className="pt-4">
-              'Ingresar en el mundo de la TI siempre fue inalcanzable, porque o
-              tenía el tiempo pero no el dinero, o tenía el dinero pero no el
-              tiempo. Cuando descubrí el Certificado profesional en Soporte de
-              TI de Google, supe que esta era mi puerta de entrada. Este es mi
-              camino. Así es como puedo llegar a la TI'.
-            </p>
-          </div>
+          <CardCommunity
+            opinion={
+              "¡Desafío superado! 🎊 Contento de haber adquirido estos conocimientos del software After Effects en una institución como Coderhouse..."
+            }
+            img={CommunityTwo}
+            name={"Sabrina Dhooge"}
+            career={"Product Designer"}
+          />
 
-          {/* Third Card */}
-          <div className="w-full p-8 shadow-xl my-4 rounded-lg bg-[#222429]">
-            <img className="rounded-full w-[110px] h-[110px] mx-auto" />
-            <p className="pt-4">Fabian Mendez</p>
-            <p className="pb-2">Lic.Quimica UCC</p>
-            <div className="border border-[#3F8CFF] w-[100px] mx-auto"></div>
-            <p className="pt-4">
-              'Conciencia me permitió ingresar en el mundo de la inteligencia
-              artificial y ahora ya no puedo alejarme de él. Estudio Medicina y
-              me dedico a analizar cómo se puede utilizar la inteligencia
-              artificial para solucionar problemas de salud en África
-              Occidental. Hasta el momento, he realizado 5 cursos relacionados
-              con la IA y un curso de escritura'.
-            </p>
-          </div>
-
-          {/* <div className="w-full p-8 shadow-xl flex flex-col my-4 rounded-lg bg-[#222429] text-[#9C9D9E]">
-            <img
-              src={People4}
-              className="rounded-full w-[140px] h-[140px] mx-auto"
-            />
-            <p className="pt-4">Fabian Mendez</p>
-            <p className="pb-2">Lic.Quimica UCC</p>
-            <div className="border border-[#3F8CFF] w-[100px] mx-auto"></div>
-            <p className="pt-4">
-              'Conciencia me permitió ingresar en el mundo de la inteligencia
-              artificial y ahora ya no puedo alejarme de él. Estudio Medicina y
-              me dedico a analizar cómo se puede utilizar la inteligencia
-              artificial para solucionar problemas de salud en África
-              Occidental. Hasta el momento, he realizado 5 cursos relacionados
-              con la IA y un curso de escritura'.
-            </p>
-          </div> */}
+          <CardCommunity
+            opinion={
+              "Sin duda fue una gran experiencia que me permitió adquirir nuevos conocimientos y seguir capacitándome. No quiero dejar de agradecer..."
+            }
+            img={CommunityThree}
+            name={"Teo Patroclo"}
+            career={"Creative Director"}
+          />
         </div>
       </div>
     </div>

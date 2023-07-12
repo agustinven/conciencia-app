@@ -3,6 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -10,5 +11,5 @@
 }
 
 body {
-  font-family: "Lato";
+  background-color: #070707;
 }
