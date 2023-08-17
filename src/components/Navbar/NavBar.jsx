@@ -1,11 +1,13 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
-const NavBar = () => {
+export const NavBar = () => {
   return (
-    <div className="bg-black">
-      <div className="text-white font-['Source Sans 3'] font-bold text-md flex justify-between items-center max-w-[1400px] mx-auto h-14">
-        {/* <img className="w-12" src={Logo} /> */}
+    <div className="bg-[#13161C]">
+      <div className="text-white font-['Source Sans 3'] font-medium text-md flex justify-between items-center max-w-[1600px] mx-auto h-14">
+      <div className="font-bold">
+        <p>Conciencia Academy</p>
+      </div>
         <ul className="flex">
           <li className="">
             <a
@@ -24,12 +26,12 @@ const NavBar = () => {
             </a>
           </li>
           <li className="ml-12">
-            <a
-              href=""
+            <Link
+              to={`/courses`}
               className="border-b-2 border-double border-transparent hover:border-current hover:border-fuchsia-500"
             >
               Cursos
-            </a>
+            </Link>
           </li>
           <li className="ml-12">
             <a
@@ -50,4 +52,3 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;

@@ -3,14 +3,14 @@ import classNames from "classnames";
 
 const TitlePresentation = ({ h1, p, bgColor }) => {
   const classStr = classNames(
-    "h-20 md:text-7xl sm:text-3xl text-2xl font-bold",
+    "h-28 text-8xl font-bold mb-4",
     bgColor
   );
 
   return (
-    <div className="flex   text-center max-w-[1200px] mx-auto">
+    <div className="mb-24 flex flex-col text-center max-w-[1200px] mx-auto ">
       <h1 className={classStr}>{h1}</h1>
-      <p className="mt-6 text-5xl max-w-[800px] leading-tight mx-auto text-white">
+      <p className="text-3xl font-regular max-w-[800px] mx-auto text-white">
         {p}
       </p>
     </div>

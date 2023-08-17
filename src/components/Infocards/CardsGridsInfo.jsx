@@ -6,11 +6,11 @@ import { ImgReusable } from "../Image";
 const CardsGridsInfo = () => {
   return (
     // Flex Container
-    <div className="bg-red-400 relative flex flex-col items-center w-[100%]">
+    <div className="relative flex flex-col items-center w-[100%]">
       {/* Grid Container */}
       <div className="grid flex-none justify-center gap-[20px] max-w-[1200px] w-[100%] grid-cols-8	grid-rows-1">
         {/* First Container */}
-        <div className="flex flex-col h-[500px] w-[100%] col-[auto_/_span_5] rounded-[20px] bg-[#5A31F7]">
+        <div className="flex flex-col h-[500px] w-[100%] col-[auto_/_span_5] rounded-[20px] bg-[#B19EFF]">
           <CardGridText
             title="Profesores expertos"
             content="Aprendé interactuando con líderes de gran trayectoria en las empresas
@@ -24,7 +24,7 @@ const CardsGridsInfo = () => {
           />
         </div>
         {/* Second Container */}
-        <div className="flex flex-col h-[500px] w-[100%] col-[auto_/_span_3] rounded-[20px] bg-[#2D8BF0]">
+        <div className="flex flex-col h-[500px] w-[100%] col-[auto_/_span_3] rounded-[20px] bg-[#64AFFF]">
           <CardGridText
             title="Tasa de aprobados"
             content="Contamos con una tasa de aprobacion  del 90%."
@@ -37,7 +37,7 @@ const CardsGridsInfo = () => {
           />
         </div>
         {/* Third Container */}
-        <div className="flex flex-col h-[500px] w-[100%] col-[auto_/_span_3] rounded-[20px] bg-[#BF30F2]">
+        <div className="flex flex-col h-[500px] w-[100%] col-[auto_/_span_3] rounded-[20px] bg-[#D58DFF]">
           <CardGridText
             title="Cursos especializados"
             content="Sumate a nuestros master cursos."
@@ -50,7 +50,7 @@ const CardsGridsInfo = () => {
           />
         </div>
         {/* Fourth Container */}
-        <div className="flex flex-col justify-between h-[500px] w-[100%] col-[auto_/_span_5] rounded-[20px] bg-[#EE3E5F]">
+        <div className="flex flex-col justify-between h-[500px] w-[100%] col-[auto_/_span_5] rounded-[20px] bg-[#FF887D]">
           <CardGridText
             title="La mejor educacion online a tu alcance"
             content="Inscribite a clases prácticas con mentorías personalizadas dictadas por quienes más saben."

@@ -4,17 +4,18 @@ import { TitlePresentation } from "../Titles";
 import { coursesPrincipalInfo } from "../../data/courseInfoPrincipal";
 
 const Cards = () => {
+  const primerosCuatroValores = coursesPrincipalInfo.slice(0, 4);
+
   return (
-    <div className="w-full mt-36">
+    <div className="w-full mb-48">
       <TitlePresentation
         h1="Explora nuestros cursos"
         p="Aprende y desarrolla las habilidades que necesitas para potenciar tu profesión, ¡toma las primeras clases del curso que tú elijas sin costo!"
         bgColor="text-[#14D990]"
       />
-      <div className="relative max-w-[1500px] mx-auto mt-[100px] grid md:grid-cols-4 gap-6">
+      <div className="relative max-w-[1300px] mx-auto grid md:grid-cols-4 gap-[10px]">
         {/* First Cards */}
-
-        {coursesPrincipalInfo.map((courses) => (
+        {primerosCuatroValores.map((courses) => (
           <CourseCards key={courses.id} {...courses} />
         ))}
       </div>

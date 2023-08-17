@@ -1,17 +1,14 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
+import { HeroCourse } from "./components/HeroCourseSection";
 
 const CourseInfo = () => {
-  const { id } = useParams();
-  const navigate = useNavigate();
 
-  const hero = useMemo(() => getHeroById(id), [id]);
-
-  if (!hero) {
-    return <Navigate to="/courses" />;
-  }
-
-  return <div>CourseInfo</div>;
+  return (
+    <>
+      <HeroCourse />
+    </>
+  );
 };
 
 export default CourseInfo;

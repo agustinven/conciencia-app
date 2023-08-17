@@ -7,14 +7,14 @@ import TitlePresentation from "../Titles/TitlePresentation";
 
 const Community = () => {
   return (
-    <div className="w-full mt-36">
-      <div className="max-w-[1400px] mx-auto text-center py-36 relative">
+    <div className="w-full mb-48">
+      <div className="max-w-[1300px] mx-auto text-center">
         <TitlePresentation
-          h1={"De la comunidad de conciencia"}
+          h1={"De la comunidad"}
           p={"Cientos de estudiantes ya aprenden en conciencia"}
           bgColor="text-[#7F43FF]"
         />
-        <div className="relative h-auto mx-auto py-24 flex items-center gap-8 text-white ">
+        <div className="mx-auto flex items-center gap-8">
           <CardCommunity
             opinion={
               "Las clases superaron mis expectativas ampliamente, la buena onda y las explicaciones fueron nada que ver a lo que yo pensaba..."

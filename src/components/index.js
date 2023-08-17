@@ -1,10 +1,9 @@
-export { default as Answers } from "./Answers";
+export { default as Answers } from "./Answers/Answers";
 export * from "./App";
 export * from "./Community";
 export * from "./CoursesInfo";
 export * from "./Footer";
 export * from "./Image";
 export * from "./Infocards";
-export * from "./Navbar";
-export { default as Paragraph } from "./Paragraph";
+export {NavBar} from "./Navbar/NavBar";
 export * from "./Titles";

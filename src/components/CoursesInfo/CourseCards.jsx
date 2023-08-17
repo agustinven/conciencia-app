@@ -1,39 +1,33 @@
 import React from "react";
-import { FaCheck } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const CourseCards = ({
-  id,
-  discount,
-  title,
-  features,
   discountPrice,
-  price,
+  features,
+  financing_fees,
+  id,
   modality,
-  discountBarColor,
+  price,
+  title_color,
+  title,
 }) => {
   return (
-    <div className="bg-[#2B2C32] rounded-[20px] w-full relative z-10 flex flex-col my-4 text-white font-bold font-['Source_Sans_3']">
-      {/*Discount*/}
-      <div
-        className="w-full text-center rounded-t-xl py-[4px] px-4 text-white font-bold "
-        style={{ backgroundColor: discountBarColor }}
-      >
-        {discount}
-      </div>
-      <div className="m-4">
+    <div className="bg-[#181B1E] rounded-[20px] w-full flex flex-col  text-white font-['Source_Sans_3'] border-solid border-2 border-[#545454]">
+      <div className="p-6">
         {/*Title*/}
-        <h1 className="h-16 font-bold font-['Inter'] text-5xl overflow-hidden	">
+        <h1 className="font-medium text-[44px] overflow-hidden" style={{color: title_color}}>
           {title}
         </h1>
-        <p className="py-2">/ por seis meses</p>
-        <div className="border border-[#7B7B7B] "></div>
+        <div className="mt-2 w-44 bg-[#2C323C] rounded-full p-[2px]">
+          <p className="text-center">{modality}</p>
+        </div>
         {/*Features section*/}
         <div className="py-10">
-          <ul className="mb-10 flex flex-col gap-y-2">
+          <ul className="mb-10 flex flex-col gap-y-2 text-[#bebebe]">
             {features.map((feature) => (
               <li key={feature} className="flex items-center">
-                <FaCheck size={15} className=" text-[#544F52] mr-3 h-4 w-4" />
+                <div className=" mr-3 h-[5px] w-[5px] rounded-full bg-[#bebebe]"></div>
+                {/* <FaCheck size={15} className=" text-[#544F52] mr-3 h-4 w-4" /> */}
                 {feature}
               </li>
             ))}
@@ -45,13 +39,15 @@ const CourseCards = ({
               Standard Plan{" "}
               <span className="line-through">{discountPrice}</span>
             </p>
+            <div className="font-medium">
+              <span>{financing_fees}</span>
+            </div>
           </div>
           {/*Price*/}
-          <p className="pt-2 font-bold text-5xl">{price}</p>
-          <p className="py-1 mt-8 w-[200px] text-center">{modality}</p>
+          <p className="pt-2 font-normal text-5xl">{price}</p>
         </div>
         {/*Button*/}
-        <button className="bg-[#393B43] w-full text-[#14D990] text-xl rounded-2xl py-3">
+        <button className="bg-[#FFFFFF] w-full text-[#151515] text-xl rounded-2xl py-3">
           <Link to={`/courses/${id}`}>Ver Más</Link>
         </button>
       </div>
