@@ -12,13 +12,10 @@ const CourseCards = ({
   title,
 }) => {
   return (
-    <div className="bg-[#181B1E] rounded-[20px] w-full flex flex-col  text-white font-['Source_Sans_3'] border-solid border-2 border-[#545454]">
+    <div className="carousel-item bg-[#181B1E] rounded-[20px] md:w-full flex flex-col  text-white font-['Source_Sans_3'] border-solid border-2 border-[#545454]">
       <div className="p-6">
         {/*Title*/}
-        <h1
-          className="font-medium text-[44px] overflow-hidden"
-          style={{ color: title_color }}
-        >
+        <h1 className="font-medium text-[44px] overflow-hidden" style={{color: title_color}}>
           {title}
         </h1>
         <div className="mt-2 w-44 bg-[#2C323C] rounded-full p-[2px]">
@@ -30,6 +27,7 @@ const CourseCards = ({
             {features.map((feature) => (
               <li key={feature} className="flex items-center">
                 <div className=" mr-3 h-[5px] w-[5px] rounded-full bg-[#bebebe]"></div>
+                {/* <FaCheck size={15} className=" text-[#544F52] mr-3 h-4 w-4" /> */}
                 {feature}
               </li>
             ))}
