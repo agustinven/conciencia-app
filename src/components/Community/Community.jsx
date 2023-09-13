@@ -3,13 +3,13 @@ import CardCommunity from "./CardCommunity";
 import { CommunityOne } from "../../assets";
 import { CommunityTwo } from "../../assets";
 import { CommunityThree } from "../../assets";
-import TitlePresentation from "../Titles/TitlePresentation";
+import * as comp  from "../Titles/TitlePresentation";
 
 const Community = () => {
   return (
     <div className="w-full mb-48">
       <div className="max-w-[1300px] mx-auto text-center">
-        <TitlePresentation
+        <comp.TitlePresentation
           h1={"De la comunidad"}
           p={"Cientos de estudiantes ya aprenden en conciencia"}
           bgColor="text-[#7F43FF]"

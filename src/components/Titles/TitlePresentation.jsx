@@ -1,20 +1,19 @@
 import React from "react";
 import classNames from "classnames";
 
-const TitlePresentation = ({ h1, p, bgColor }) => {
+export const TitlePresentation = ({ h1, p, bgColor }) => {
   const classStr = classNames(
-    "h-28 text-8xl font-bold mb-4",
+    "text-5xl font-bold md:text-8xl",
     bgColor
   );
 
   return (
-    <div className="mb-24 flex flex-col text-center max-w-[1200px] mx-auto ">
+    <div className="mb-24 flex flex-col text-center max-w-[1100px] mx-auto ">
       <h1 className={classStr}>{h1}</h1>
-      <p className="text-3xl font-regular max-w-[800px] mx-auto text-white">
+      <p className="text-xl font-regular mt-4 max-w-[300px] mx-auto text-white  md:max-w-[800px] md:text-3xl md:font-semibold">
         {p}
       </p>
     </div>
   );
 };
 
-export default TitlePresentation;

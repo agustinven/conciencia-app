@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 export const NavBar = () => {
   return (
-    <div className="bg-[#13161C]">
-      <div className="text-white font-['Source Sans 3'] font-medium text-md flex justify-between items-center max-w-[1600px] mx-auto h-14">
-      <div className="font-bold">
-        <p>Conciencia Academy</p>
-      </div>
+    <>
+      <div className="text-white font-['Source Sans 3'] font-medium text-md flex justify-between items-center px-20 h-14">
+        <div className="font-bold">
+          <p>Conciencia Academy</p>
+        </div>
         <ul className="flex">
           <li className="">
             <a
@@ -48,7 +48,6 @@ export const NavBar = () => {
           </button>
         </div> */}
       </div>
-    </div>
+    </>
   );
 };
-

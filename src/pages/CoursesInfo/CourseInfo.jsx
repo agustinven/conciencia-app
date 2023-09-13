@@ -1,12 +1,16 @@
-import React, { useMemo } from "react";
-import { Navigate, useNavigate, useParams } from "react-router-dom";
-import { HeroCourse } from "./components/HeroCourseSection";
+import * as compSource from "../../components";
+import * as compPage from "./components";
 
 const CourseInfo = () => {
-
   return (
     <>
-      <HeroCourse />
+      <compSource.NavBar />
+      <compPage.HeroCourse />
+      <compPage.StudyPlan />
+      <compSource.WhyChoose />
+      <compPage.SitePlans />
+      <compSource.Community />
+      <compSource.Footer />
     </>
   );
 };

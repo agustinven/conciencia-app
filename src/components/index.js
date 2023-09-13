@@ -6,4 +6,4 @@ export * from "./Footer";
 export * from "./Image";
 export * from "./Infocards";
 export {NavBar} from "./Navbar/NavBar";
-export * from "./Titles";
+export {TitlePresentation} from "./Titles/TitlePresentation";

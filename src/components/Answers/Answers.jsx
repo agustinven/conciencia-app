@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { TitlePresentation } from "../Titles";
+import * as comp from "../../components"
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 
 
@@ -43,7 +43,7 @@ const FaqSection = () => {
 
   return (
     <div className="max-w-[1300px] mx-auto">
-      <TitlePresentation h1={"Preguntas frecuentes"} bgColor="text-[#7F43FF]" />
+      <comp.TitlePresentation h1={"Preguntas frecuentes"} bgColor="text-[#7F43FF]" />
       <div className="max-w-[800px]  rounded-3xl mb-48 p-2">
         {questionsAndAnswers.map((item, index) => (
           <div

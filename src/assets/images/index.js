@@ -1,16 +1,22 @@
-export { default as Estudiante } from "./estudiante.png";
-export { default as Discord } from "./discord.svg";
-export { default as Drive } from "./drive.svg";
-export { default as Gradient } from "./gradient.png";
-export { default as Logo } from "./logo.png";
-export { default as Micro } from "./micro.jpg";
-export { default as Profe } from "./profe1.png";
-export { default as Trello } from "./trello.svg";
-export { default as User1 } from "./user1.jpg";
-export { default as User2 } from "./user2.jpg";
-export { default as WeOfferYou } from "./weOffer.jpg";
-export { default as CommunityOne } from "./community_one.png";
-export { default as CommunityTwo } from "./community_two.png";
-export { default as CommunityThree } from "./community_three.png";
-export { default as RectangleOne } from "./rectangle_1.svg";
-export { default as RectangleTwo } from "./rectangle_2.svg";
+export { default as Estudiante } from "./estudiante.png"
+export { default as Discord } from "./discord.svg"
+export { default as Drive } from "./drive.svg"
+export { default as Gradient } from "./gradient.png"
+export { default as Logo } from "./logo.png"
+export { default as Micro } from "./micro.jpg"
+export { default as Profe } from "./profe1.png"
+export { default as Trello } from "./trello.svg"
+export { default as User1 } from "./user1.jpg"
+export { default as User2 } from "./user2.jpg"
+export { default as WeOfferYou } from "./weOffer.jpg"
+export { default as CommunityOne } from "./community_one.png"
+export { default as CommunityTwo } from "./community_two.png"
+export { default as CommunityThree } from "./community_three.png"
+export { default as RectangleOne } from "./rectangle_1.svg"
+export { default as RectangleTwo } from "./rectangle_2.svg"
+export { default as ProfeLaboOne } from "./profeLaboOne.png"
+export {default as Book} from "./book_icon.png"
+export {default as Date} from "./date_icon.png"
+export {default as Pc} from "./pc_icon.png"
+export {default as CheckGreen} from "./check_green.png"
+export { default as CloseRed } from "./close_red.png"

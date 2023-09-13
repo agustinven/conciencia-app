@@ -12,12 +12,12 @@ const Home = () => {
         span="#INSCRIBITE"
         p=" A NUESTRO CURSO DE MICROSCOPIA!!"
       />
-      <NavBar />
+      {/* <NavBar /> */}
       <Hero />
       <WeOffer />
       <WhyChoose />
       <CoursePrincipal />
-      <Community />
+      {/* <Community /> */}
       <Answers />
       <Footer />
     </>
