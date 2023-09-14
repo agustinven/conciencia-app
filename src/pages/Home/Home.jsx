@@ -17,7 +17,7 @@ const Home = () => {
       <WeOffer />
       <WhyChoose />
       <CoursePrincipal />
-      {/* <Community /> */}
+      <Community />
       <Answers />
       <Footer />
     </>
