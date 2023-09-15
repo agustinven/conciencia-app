@@ -12,7 +12,7 @@ const HeroCourse = () => {
   const color = getColor(id);
 
   return (
-    <div className={`flex justify-between ${color} h-[800px] mb-48`}>
+    <div className={`flex justify-between ${color} h-[800px] pb-36 md:pb-48`}>
       <div className="max-w-[1400px] ml-[200px] flex items-center">
         <div className="w-[500px]">
           <HeroTitles />

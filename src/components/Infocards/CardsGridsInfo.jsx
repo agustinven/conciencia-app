@@ -24,7 +24,7 @@ const CardsGridsInfo = () => {
           />
         </div>
         {/* Second Container */}
-        <div className="flex flex-col h-[400px] w-[100%] col-[auto_/_span_3] rounded-[20px] bg-[#64AFFF]">
+        <div className="flex flex-col h-[400px] w-[100%] col-[auto_/_span_3] rounded-[20px] bg-[#64AFFF] md:h-[500px]">
           <CardGridText
             title="Tasa de aprobados"
             content="Contamos con una tasa de aprobacion  del 90%."
@@ -37,7 +37,7 @@ const CardsGridsInfo = () => {
           />
         </div>
         {/* Third Container */}
-        <div className="flex flex-col h-[400px] w-[100%] col-[auto_/_span_3] rounded-[20px] bg-[#D58DFF]">
+        <div className="flex flex-col h-[400px] w-[100%] col-[auto_/_span_3] rounded-[20px] bg-[#D58DFF] md:h-[500px]">
           <CardGridText
             title="Cursos especializados"
             content="Sumate a nuestros master cursos."
@@ -45,12 +45,12 @@ const CardsGridsInfo = () => {
           <ImgReusable
             img={Micro}
             widthImg="w-[300px]"
-            heightImg="h-[250px] md:h-[300px]"
+            heightImg="h-[230px]"
             alignImgContainer="items-center"
           />
         </div>
         {/* Fourth Container */}
-        <div className="flex flex-col justify-between h-[400px] w-[100%] col-[auto_/_span_5] rounded-[20px] bg-[#FF887D]">
+        <div className="flex flex-col justify-between h-[400px] w-[100%] col-[auto_/_span_5] rounded-[20px] bg-[#FF887D] md:h-[500px]">
           <CardGridText
             title="La mejor educacion online a tu alcance"
             content="Inscribite a clases prácticas con mentorías personalizadas dictadas por quienes más saben."
@@ -64,7 +64,7 @@ const CardsGridsInfo = () => {
                 alignImgContainer="items-start hidden md:block"
               />
             </div>
-            <div className="flex flex-col mx-auto mb-4">
+            <div className="flex flex-col md:justify-center mx-auto mb-4">
               <div className="flex flex-row items-center gap-3">
                 <img
                   src={User1}

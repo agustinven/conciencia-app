@@ -4,7 +4,7 @@ import CardsGridsInfo from "./CardsGridsInfo";
 
 const WhyChoose = () => {
   return (
-    <div className="text-white mb-48">
+    <div className="text-white pb-36 md:pb-48">
       <comp.TitlePresentation
         h1="¿Por qué elegirnos?"
         p="Clases online en vivo dictadas por expertos, mentorías personalizadas y acceso a una comunidad de estudiantes."

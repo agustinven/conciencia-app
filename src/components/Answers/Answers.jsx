@@ -44,7 +44,7 @@ const FaqSection = () => {
   return (
     <div className="max-w-[1300px] mx-auto">
       <comp.TitlePresentation h1={"Preguntas frecuentes"} bgColor="text-[#7F43FF]" />
-      <div className="max-w-[800px]  rounded-3xl mb-48 p-2">
+      <div className="max-w-[800px]  rounded-3xl pb-36 md:pb-48 p-2">
         {questionsAndAnswers.map((item, index) => (
           <div
             key={item.id}

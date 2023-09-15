@@ -4,7 +4,7 @@ import * as comp from "../../../components"
 
 const WeOffer = () => {
   return (
-    <div className="w-full text-white bg-[#13161C] mt-20 mb-48 md:mt-28">
+    <div className="w-full text-white bg-[#13161C] pb-36 md:pb-48">
       <comp.TitlePresentation
         h1="Te ofrecemos"
         p="Cursos efectivos en 21 areas de estudio mas demandadas en el mercado

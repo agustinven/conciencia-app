@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="text-white bg-[#13161C] font-['Inter'] ">
+    <div className="text-white bg-[#13161C] font-['Inter'] pb-28">
       <div className="flex flex-col break-words justify-center max-w-[300px] mx-auto md:max-w-[1400px] h-screen md:text-center">
         <h1 className="md:text-6xl py-6 text-5xl font-[Inter] font-bold">
           Todo lo que necesitás para aprobar

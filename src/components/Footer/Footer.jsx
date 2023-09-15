@@ -10,7 +10,7 @@ import {
 const Footer = () => {
   return (
     <div>
-      <div className="max-w-[1300px] mx-auto mb-12 grid lg:grid-cols-3 gap-8">
+      <div className="px-6 max-w-[1300px] mx-auto pb-12 grid lg:grid-cols-3 gap-8">
         <div>
           <h1 className="w-full text-3xl font-bold text-[#BE09FF] font-['Inter']">
             CONCIENCIA ACADEMY

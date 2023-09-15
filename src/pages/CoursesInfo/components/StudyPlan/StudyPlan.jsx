@@ -14,7 +14,7 @@ const StudyPlan = () => {
   const titleColor = getTitleColor(id);
 
   return (
-    <div className="max-w-[1200px] mx-auto mb-48">
+    <div className="max-w-[1200px] mx-auto pb-48">
       <comp.TitlePresentation
         h1="Conoce nuestro plan de estudio"
         p="Una ruta de aprendizaje ideal para ti, te ayudamos a definirla según tus objetivos."
