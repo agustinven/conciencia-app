@@ -1,17 +1,17 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-// import { heroTitleDescription } from "../../../../data/HeroTitleDescription";
+import { heroTitleDescription } from "../../../../data/HeroTitleDescription";
 
 const HeroTitles = () => {
-  // const { id } = useParams();
+  const { id } = useParams();
 
-  // const course = heroTitleDescription[id];
+  const course = heroTitleDescription[id];
 
   return (
     <>
       <div className="text-white">
-        <h1 className="text-7xl font-['Inter'] font-bold py-6">dawd </h1>
-        <p className="text-3xl font-['Source_Sans_3'] font-medium">dawd</p>
+        <h1 className="text-4xl md:text-7xl font-['Inter'] font-bold py-6">{course.title} </h1>
+        <p className="text-lg md:text-3xl font-['Source_Sans_3'] font-medium">{course.description}</p>
       </div>
     </>
   );

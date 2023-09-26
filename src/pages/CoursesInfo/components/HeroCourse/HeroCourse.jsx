@@ -5,32 +5,38 @@ import { useParams } from "react-router-dom";
 import { getColor } from "../../../../utils/getColorFunction";
 
 const HeroCourse = () => {
-  
   const { id } = useParams();
 
   //Asignar colores basados en el id del curso
   const color = getColor(id);
 
   return (
-    <div className={`flex justify-between ${color} h-[800px] pb-36 md:pb-48`}>
-      <div className="max-w-[1400px] ml-[200px] flex items-center">
-        <div className="w-[500px]">
+    <div
+      className={`relative flex flex-col md:flex-row justify-center md:justify-around items-center h-[500px] md:h-[800px] mb-36 md:mb-48`}
+    >
+      <div className="md:ml-4 flex flex-col items-center md:items-start">
+        <div className="w-[300px] md:w-[500px] text-center md:text-left relative z-10">
           <HeroTitles />
-          <div className="py-12 flex justify-between">
-            <button className="bg-white p-4 rounded-xl w-[220px] font-medium text-2xl">
+          <div className="py-4 md:py-12 space-y-4 md:space-y-0 md:flex md:justify-between">
+            <button className="bg-[#0065FD] p-2 md:p-4 rounded-xl w-full md:w-[220px] text-xl font-medium md:font-medium md:text-2xl text-white">
               Inscribite ahora
             </button>
-            <button className=" w-[220px] font-medium text-2xl text-white">
+            <button className="w-full md:w-[220px] text-xl font-medium md:font-medium md:text-2xl text-white">
               Ver Programa
             </button>
           </div>
         </div>
       </div>
-      <div
-        className="w-[800px] flex items-center
-      "
-      >
-        <img src={ProfeLaboOne} />
+      <div className="flex items-center">
+        <div
+          className="bg-no-repeat bg-center bg-contain opacity-20 md:opacity-40 absolute inset-0 w-full h-full z-0"
+          style={{
+            backgroundImage: `url('${ProfeLaboOne}')`, // Reemplaza 'tu-imagen.jpg' con la URL de tu imagen
+            backgroundSize: "100% 100%",
+          }}
+        >
+          {/* <img src={ProfeLaboOne} alt="ProfeLaboOne" className="w-full" /> */}
+        </div>
       </div>
     </div>
   );
