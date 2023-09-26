@@ -1,6 +1,6 @@
-import React from "react";
 import { useParams } from "react-router-dom";
-import { heroTitleDescription } from "../../../../data/HeroTitleDescription";
+import { heroTitleDescription } from "../../../../data/heroTitleDescription";
+
 
 const HeroTitles = () => {
   const { id } = useParams();
