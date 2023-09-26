@@ -1,14 +1,26 @@
 import React from "react";
 import HeroTitles from "../HeroTitles/HeroTitles";
-import { ProfeLaboOne } from "../../../../assets";
 import { useParams } from "react-router-dom";
 import { getColor } from "../../../../utils/getColorFunction";
+import { heroImagesCourse } from "../../../../data/heroImagesCourse";
+
 
 const HeroCourse = () => {
   const { id } = useParams();
 
   //Asignar colores basados en el id del curso
   const color = getColor(id);
+
+  //Alojar la imagen basado en el id del curso
+  const heroImageDataId = heroImagesCourse[id];
+
+  console.log(heroImageDataId)
+
+  // const img = heroImagesCourse.map((image) => {
+  //   return image.img
+  // })
+
+  // console.log(img)
 
   return (
     <div
@@ -31,7 +43,7 @@ const HeroCourse = () => {
         <div
           className="bg-no-repeat bg-center bg-contain opacity-20 md:opacity-40 absolute inset-0 w-full h-full z-0"
           style={{
-            backgroundImage: `url('${ProfeLaboOne}')`, // Reemplaza 'tu-imagen.jpg' con la URL de tu imagen
+            backgroundImage: `url('${heroImageDataId.img}')`, // Reemplaza 'tu-imagen.jpg' con la URL de tu imagen
             backgroundSize: "100% 100%",
           }}
         >

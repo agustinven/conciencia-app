@@ -43,7 +43,7 @@ export const SitePlans = () => {
         p="Elegi el plan que mas se amolde a tus necesidades."
         bgColor="text-[#4086FF]"
       />
-      <div className="gap-4 md:gap-0 md:w-[1300px] flex flex-col md:flex-row mx-auto">
+      <div className="gap-4 md:gap-0 md:w-[1300px] flex flex-col md:flex-row mx-6 md:mx-auto">
         {plans.map((plan, index) => (
           <PlanCard key={index} {...plan} />
         ))}

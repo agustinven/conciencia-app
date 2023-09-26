@@ -24,8 +24,8 @@ const StudyPlan = () => {
         <div className="text-white mx-8 md:mx-0 text-2xl md:text-5xl font-semibold">
           <p>Contenido:</p>
         </div>
-        <div className="text-white flex flex-col md:flex-row items-center gap-6 md:items-stretch md:justify-between py-8">
-          <div className="w-[350px] md:w-[600px] bg-[#23282E] rounded-xl relative">
+        <div className="text-white flex flex-col md:flex-row items-center gap-6 md:items-stretch mx-6 md:justify-between py-8">
+          <div className="w-full md:w-[600px] bg-[#23282E] rounded-xl relative">
             <div
               className={`absolute top-[10px] left-[10px] w-full h-full ${color} -z-10 rounded-xl`}
             ></div>
@@ -48,11 +48,11 @@ const StudyPlan = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col py-8 px-6 justify-center gap-10 w-[350px] md:w-[450px] bg-[#23282E] rounded-xl relative">
+          <div className="flex flex-col py-8 px-6 justify-center gap-10 w-full md:w-[450px] bg-[#23282E] rounded-xl relative">
             <div
               className={`absolute top-[10px] right-[10px] w-full h-full ${color} -z-10 rounded-xl`}
             ></div>
-            <div className="bg-[#474C54] mx-auto w-[300px] rounded-full p-2 md:p-3 text-lg md:text-xl text-center font-medium">
+            <div className="bg-[#474C54] mx-auto w-full rounded-full p-2 md:p-3 text-lg md:text-xl text-center font-medium">
               <p>Modalidad 100% online</p>
             </div>
             <div className="mx-auto">
@@ -82,7 +82,7 @@ const StudyPlan = () => {
               </div>
             </div>
             <button
-              className={`${color} p-2 md:p-3 mx-auto block rounded-full w-[300px] font-medium text-xl md:text-2xl`}
+              className={`${color} p-2 md:p-3 mx-auto block rounded-full w-full font-medium text-xl md:text-2xl`}
             >
               Descargar programa
             </button>
