@@ -14,13 +14,6 @@ const HeroCourse = () => {
   //Alojar la imagen basado en el id del curso
   const heroImageDataId = heroImagesCourse[id];
 
-  console.log(heroImageDataId)
-
-  // const img = heroImagesCourse.map((image) => {
-  //   return image.img
-  // })
-
-  // console.log(img)
 
   return (
     <div
@@ -30,7 +23,7 @@ const HeroCourse = () => {
         <div className="w-[300px] md:w-[500px] text-center md:text-left relative z-10">
           <HeroTitles />
           <div className="py-4 md:py-12 space-y-4 md:space-y-0 md:flex md:justify-between">
-            <button className="bg-[#0065FD] p-2 md:p-4 rounded-xl w-full md:w-[220px] text-xl font-medium md:font-medium md:text-2xl text-white">
+            <button className={`${color} p-2 md:p-4 rounded-xl w-full md:w-[220px] text-xl font-medium md:font-medium md:text-2xl text-white`}>
               Inscribite ahora
             </button>
             <button className="w-full md:w-[220px] text-xl font-medium md:font-medium md:text-2xl text-white">
@@ -47,9 +40,11 @@ const HeroCourse = () => {
             backgroundSize: "100% 100%",
           }}
         >
+          
           {/* <img src={ProfeLaboOne} alt="ProfeLaboOne" className="w-full" /> */}
         </div>
       </div>
+      
     </div>
   );
 };
